@@ -78,3 +78,21 @@ while (count_e!=7){
     temp += int.Parse(Console.ReadLine()!);count_e++;
 }
 Console.WriteLine($"Температура за неделю:{(double)temp/7}");
+
+
+//доп
+
+int tryPin = 0;
+int pin = 1234;
+Console.WriteLine("Введите ПИН");
+int pin2 = int.Parse(Console.ReadLine());
+int count_g = 0;
+
+while (count_g!=2){
+    if (pin2 != pin){
+        pin2 = int.Parse(Console.ReadLine()!);count_g++;
+        Console.WriteLine($"Неверный ПИН. Осталось попыток: {2-count_g}");
+    } else {
+        Console.WriteLine("Верный пин");break;
+    }
+}
