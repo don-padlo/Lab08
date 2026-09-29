@@ -43,3 +43,38 @@ while (true){
     }
     Console.WriteLine("Неправильно, попробуй ещё раз");count_t++;
 }
+
+Console.WriteLine();
+//A
+int n = 6; int count_c = 0;
+while (count_c != 10){
+    count_c++;
+    Console.WriteLine($"{count_c}*{n}={count_c * n}");
+}
+
+Console.WriteLine();
+//Б
+string name="";
+int count_q = 0;
+while (name != "конец") {
+    name = Console.ReadLine();++count_q;
+}
+Console.WriteLine($"Имён введено: {count_q - 1}");
+
+Console.WriteLine();
+//3
+int b = 6; int count_l = 0;
+while (count_l != b){
+    count_l++;
+    Console.WriteLine($"{count_l}*{count_l}={count_l * count_l}");
+}
+
+//7
+Console.WriteLine();
+Console.WriteLine("Введите температуру за неделю:");
+int temp = 0; int count_e = 0;
+
+while (count_e!=7){
+    temp += int.Parse(Console.ReadLine()!);count_e++;
+}
+Console.WriteLine($"Температура за неделю:{(double)temp/7}");
